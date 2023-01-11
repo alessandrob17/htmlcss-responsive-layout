@@ -46,9 +46,24 @@ a {
     flex-wrap: wrap;
 
 }
-
+.row.gutter{
+    row-gap: 32px;
+    margin: 0 -12px;
+    padding-top: 30px;
+}
+.row.gutter >[class^='col']{
+    padding: 0 12px;
+}
 .space-between {
     justify-content: space-between;
+}
+/* MEDIAQUERY PADDING AL CONTAINER */
+
+@media screen and (max-width: 1203px) {
+    .container{
+        padding-left: 32px ;
+    padding-right: 32px;
+    }
 }
 
 /* COLUMN */
@@ -163,7 +178,22 @@ a {
 }
 @media only screen and (max-width: 710px) {
     .section1{
-        height: 1200px;
+        height: 1400px;
     } 
-   
+.width-250{
+    width: 350px;
+}
+.col-sec2 h3{
+    font-size: 35px;
+}
+.col-sec2 p{
+font-size: 17px;
+line-height: 35px;
+}
+.card2-section2{
+    width:400px ;
+    height: 500px;
+}
+
+
 }
